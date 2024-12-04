@@ -1,68 +1,25 @@
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    }
-    * {
-    box-sizing: border-box;
-    }   
-html, body {
-    height: 100%;
-    margin: 0;
-}
-body {
+    padding: 0;
+  }
+  
+  .dashboard-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color:#262726;
-}
-.form-container {
+    justify-content: center;
     padding: 20px;
-    margin-top: auto; 
-    background-color: #e4e2e2;
-    width: 100%;
-    text-align: center;
-}
-
-form {
-    display: inline-block;
-    max-width: 400px;
-    width: 100%;
-    background-color:#262726;
-}
-
-input {
-    margin: 5px 0;
-    padding: 8px;
-    width: 100%;
-    max-width: 300px;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #cbcbcb;
-    color: rgb(49, 48, 48);
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #262726;
-}
-h1{
-    color: #cbcbcb;
-}
-footer{
-    background-color: rgb(24, 24, 24);
-    color: aliceblue;
-}
-.footer-links a {
-    color: #ddd;
-    padding: 0 15px;    
-    font-weight: bold;    
-    text-decoration: none;
-}
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card-container > * {
+    flex: 1;
+    min-width: 250px;
+  }
+  
