@@ -1,0 +1,80 @@
+/* User Profile Form Styles */
+.user-profile-container {
+  padding: 20px;
+  background-color: #e8e5e5;  /* Dark background */
+  color: #2f2f2f;  /* Light text */
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.user-profile-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #2d2c2c;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #031d92;
+  background-color: #d6d6d6;
+  color: #242323;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #0439ad;  /* Highlight border on focus */
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #054175;
+  background-color:  #3498f0;  /* Premium yellow */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #bfa40e;  /* Darker yellow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .user-profile-container {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .user-form {
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}

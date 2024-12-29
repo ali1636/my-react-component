@@ -1,0 +1,170 @@
+/* Navbar container */
+.navbar {
+    background-color: #333; /* Dark background for premium feel */
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ddd; /* Light grey color for logo */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    margin-right: 10px;
+    color: #ddd; /* Light grey color for icon */
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.search-input {
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid #666; /* Darker grey border */
+    width: 100%;
+    background-color: #444; /* Darker background for input */
+    color: #fff; /* White text inside input */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #aaa; /* Light grey border on focus */
+}
+
+/* Search Button */
+.search-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #aaa; /* Light grey color */
+    transition: color 0.3s ease;
+}
+
+.search-button:hover {
+    color: #fff; /* White color on hover */
+}
+
+/* Navbar Menu Links */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ddd; /* Light grey color for links */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #bbb; /* Slightly lighter grey on hover */
+}
+
+/* Cart & Profile Icons */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.icon-button {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: #ddd; /* Light grey color */
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #aaa; /* Light grey background for cart count */
+    color: #333; /* Dark text color for contrast */
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: #ddd; /* Light grey hamburger icon */
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.hamburger.active span {
+    background-color: #aaa; /* Lighter grey when active */
+}
+
+/* Mobile Menu */
+.navbar-menu.show {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .navbar-menu {
+        display: none;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
