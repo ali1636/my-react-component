@@ -1,7 +1,7 @@
 /* Navbar container */
-.navbar {
-    background-color: #333; /* Dark background for premium feel */
-    color: #fff;
+nav.navbar {
+    background-color: #011f16; /* Dark Green background */
+    color: #01271a;  /* Slightly lighter green for text */
     padding: 15px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -20,7 +20,7 @@
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #ddd; /* Light grey color for logo */
+    color: #e0e0e0; /* Light grey color for logo */
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
 
 .logo i {
     margin-right: 10px;
-    color: #ddd; /* Light grey color for icon */
+    color: #e0e0e0; /* Light grey color for icon */
 }
 
 /* Search Bar */
@@ -44,16 +44,16 @@
     padding: 10px 40px;
     font-size: 1rem;
     border-radius: 30px;
-    border: 1px solid #666; /* Darker grey border */
+    border: 1px solid #2e6a54; /* Darker green border */
     width: 100%;
-    background-color: #444; /* Darker background for input */
+    background-color: #1f3b2f; /* Dark green background for input */
     color: #fff; /* White text inside input */
     outline: none;
     transition: border-color 0.3s ease;
 }
 
 .search-input:focus {
-    border-color: #aaa; /* Light grey border on focus */
+    border-color: #4e8a6a; /* Lighter green border on focus */
 }
 
 /* Search Button */
@@ -66,7 +66,7 @@
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
-    color: #aaa; /* Light grey color */
+    color: #bbb; /* Light grey color */
     transition: color 0.3s ease;
 }
 
@@ -84,7 +84,7 @@
     margin-left: 30px;
     font-size: 1rem;
     font-weight: 600;
-    color: #ddd; /* Light grey color for links */
+    color: #e0e0e0; /* Light grey color for links */
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -92,7 +92,7 @@
 }
 
 .nav-link:hover {
-    color: #bbb; /* Slightly lighter grey on hover */
+    color: #a3d9a5; /* Lighter green on hover */
 }
 
 /* Cart & Profile Icons */
@@ -105,7 +105,7 @@
 .icon-button {
     margin-left: 20px;
     font-size: 1.5rem;
-    color: #ddd; /* Light grey color */
+    color: #e0e0e0; /* Light grey color */
     position: relative;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@
     position: absolute;
     top: -5px;
     right: -5px;
-    background-color: #aaa; /* Light grey background for cart count */
+    background-color: #a3d9a5; /* Light green background for cart count */
     color: #333; /* Dark text color for contrast */
     font-size: 0.8rem;
     padding: 2px 6px;
@@ -132,14 +132,14 @@
 }
 
 .hamburger span {
-    background-color: #ddd; /* Light grey hamburger icon */
+    background-color: #e0e0e0; /* Light grey hamburger icon */
     height: 4px;
     width: 100%;
     border-radius: 5px;
 }
 
 .hamburger.active span {
-    background-color: #aaa; /* Lighter grey when active */
+    background-color: #bbb; /* Lighter grey when active */
 }
 
 /* Mobile Menu */
